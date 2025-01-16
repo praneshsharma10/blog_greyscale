@@ -1,4 +1,4 @@
-
+'use client'
 //using shadcn
 import { Card } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
