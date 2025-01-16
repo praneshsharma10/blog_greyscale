@@ -1,6 +1,8 @@
 // shadcn ui
- import { Card } from '@/components/ui/card'
- import { Input } from '@/components/ui/input'
+import { Card } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
+import { Textarea } from '@/components/ui/textarea'
 
 export default function ContactPage() {
   return (
@@ -28,8 +30,11 @@ export default function ContactPage() {
               <label htmlFor="message" className="">
                 message
               </label>
-            
+              <Textarea id="message" required className="" />
         </div>
+        <Button type="submit" className="">
+              send message
+        </Button>
         </Card>
         
         
