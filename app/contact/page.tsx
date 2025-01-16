@@ -1,5 +1,6 @@
 // shadcn ui
  import { Card } from '@/components/ui/card'
+ import { Input } from '@/components/ui/input'
 
 export default function ContactPage() {
   return (
@@ -13,7 +14,7 @@ export default function ContactPage() {
             <label htmlFor="name" className="">
                 name
             </label>
-            
+            <Input id="name" required />
         </div>
 
         </Card>
