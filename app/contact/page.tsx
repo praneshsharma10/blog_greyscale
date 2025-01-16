@@ -1,4 +1,5 @@
-
+// shadcn ui
+ import { Card } from '@/components/ui/card'
 
 export default function ContactPage() {
   return (
@@ -7,6 +8,15 @@ export default function ContactPage() {
         <h1 className="">
           contact
         </h1>
+        <Card className=''>
+        <div>
+            <label htmlFor="name" className="">
+                name
+            </label>
+            
+        </div>
+
+        </Card>
         
         
       </div>
