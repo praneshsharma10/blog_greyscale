@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import { Footer } from '@/components/footer'
 
 const featuredBlogs = [
   {
@@ -97,6 +98,7 @@ export default function Home() {
             </Card>
           ))}
         </div>
+        <Footer/>
       </section>
     </div>
   )
