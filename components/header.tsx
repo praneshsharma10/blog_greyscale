@@ -7,7 +7,7 @@ import { Menu, X } from 'lucide-react'
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Blogs', href: '/blogs' },
-
+  { name: 'Contact', href: '/contact' },
 ]
 
 export function Header() {
