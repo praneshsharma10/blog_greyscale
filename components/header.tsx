@@ -1,4 +1,3 @@
-'use client'
 
 import Link from 'next/link'
 import { useState } from 'react'
@@ -7,6 +6,7 @@ import { Menu, X } from 'lucide-react'
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Blogs', href: '/blogs' },
+  { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ]
 
@@ -23,7 +23,7 @@ export function Header() {
             </Link>
           </div>
           
-          {/* Desktop navigation */}
+
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
               {navigation.map((item) => (
@@ -38,7 +38,7 @@ export function Header() {
             </div>
           </div>
 
-          {/* Mobile menu button */}
+
           <div className="md:hidden">
             <button
               type="button"
@@ -51,7 +51,7 @@ export function Header() {
           </div>
         </div>
 
-        {/* Mobile menu */}
+
         {isOpen && (
           <div className="md:hidden">
             <div className="space-y-1 pb-3 pt-2">
