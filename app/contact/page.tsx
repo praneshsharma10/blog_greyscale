@@ -19,7 +19,7 @@ export default function ContactPage() {
               </label>
               <Input id="name" required />
             </div>
-            
+
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                 email
@@ -34,7 +34,7 @@ export default function ContactPage() {
               <Textarea id="message" required className="min-h-[150px]" />
             </div>
             
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full rounded bg-black text-white hover:bg-black hover:text-white hover:scale-x-95 hover:scale-y-95">
               send message
             </Button>
           </form>

@@ -44,7 +44,7 @@ export default function Home() {
             </p>
             <div className="mt-10">
               <Link href="/blogs">
-                <Button size="lg" className="rounded-full">
+                <Button size="lg" className="rounded-full bg-black text-white hover:bg-gray-700 hover:scale-y-95 hover:scale-x-95	">
                   explore blogs
                 </Button>
               </Link>
