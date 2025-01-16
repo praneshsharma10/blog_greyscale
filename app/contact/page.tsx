@@ -17,6 +17,19 @@ export default function ContactPage() {
             <Input id="name" required />
         </div>
 
+        <div>
+              <label htmlFor="email" className="">
+                email
+              </label>
+              <Input id="email" type="email" required />
+        </div>
+
+        <div>
+              <label htmlFor="message" className="">
+                message
+              </label>
+            
+        </div>
         </Card>
         
         
