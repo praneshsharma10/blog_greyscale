@@ -1,3 +1,5 @@
+import { Github } from "lucide-react";
+import Link from "next/link";
 
 
 export default function AboutPage() {
@@ -15,17 +17,20 @@ export default function AboutPage() {
 
                     </p>
                     <h2>
-
+                    Skills
                     </h2>
                     <ul>
-                        <li></li>
-                        <li></li>
+                        <li>AWS</li>
+                        <li>git</li>
                     </ul>
 
                 </div>
                 
                 {/* icons */}
-                <div>
+                <div className="flex gap-4">
+                    <Link href="">
+                        <Github className="" size={24} />
+                    </Link>
 
                 </div>
                 
