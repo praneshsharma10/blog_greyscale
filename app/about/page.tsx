@@ -1,4 +1,5 @@
 
+
 export default function AboutPage() {
     return (
       <div className="">
@@ -9,7 +10,8 @@ export default function AboutPage() {
                 </h1>
                 <div>
                     <p>
-                        HI
+                    hi, I am Pranesh Sharma, an aspiring software engineer with a passion for simplifying complex technical concepts.
+                    I believe in making technology more accessible and easier to understand for everyone.
 
                     </p>
                     <h2>
