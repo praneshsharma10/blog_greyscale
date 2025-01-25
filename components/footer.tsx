@@ -1,5 +1,6 @@
 import Link from 'next/link' ;
-import { Github, Linkedin, Twitter } from 'lucide-react'
+import { Github, Linkedin, Twitter } from 'lucide-react' ;
+
 
 
 export function Footer() {
@@ -14,6 +15,7 @@ export function Footer() {
             <Link href="/blogs" className="text-gray-500 hover:text-black">
               blogs
             </Link>
+            
             <Link href="/about" className="text-gray-500 hover:text-black">
               about
             </Link>
@@ -24,7 +26,8 @@ export function Footer() {
           
           <div className="flex gap-6">
             <Link href="https://github.com" className="text-gray-500 hover:text-black">
-              <Github className="h-5 w-5" />
+              <Github className="h-6 w-5" />
+
             </Link>
             <Link href="https://linkedin.com" className="text-gray-500 hover:text-black">
               <Linkedin className="h-5 w-5" />
