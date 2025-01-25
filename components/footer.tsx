@@ -9,12 +9,16 @@ export function Footer() {
         <div className=" px-4 py-12 ">
         <nav className="flex flex-col items-center justify-between gap-6 sm:flex-row">
           <div className="flex gap-6 text-sm">
-            
+
             <Link href="/" className="text-gray-500 hover:text-black">
               home
             </Link>
             <Link href="/blogs" className="text-gray-500 hover:text-black">
               blogs
+            </Link>
+
+            <Link href="/tools" className="text-gray-500 hover:text-black">
+              tools
             </Link>
             
             <Link href="/about" className="text-gray-500 hover:text-black">
