@@ -22,6 +22,22 @@ const blogs = [
     tags: ['AWS', 'Cloud'],
   },
 
+  {
+    title: 'Git Fundamentals',
+    description: 'Master the essential Git commands and workflows for version control.',
+    author: 'pranesh' ,
+    date :'10' ,
+    tags: ['Git', 'Version Control'],
+  },
+  {
+    title: 'CI/CD Pipeline Setup',
+    description: 'Build and deploy your applications automatically with CI/CD pipelines.',
+    author: 'pranesh' ,
+    date :'12' ,
+    
+    tags: ['DevOps', 'CI/CD'],
+  },
+
 ]
 
 export default function BlogsPage() {
