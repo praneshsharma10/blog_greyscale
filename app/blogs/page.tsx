@@ -8,10 +8,7 @@ import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
 
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
+  Select,SelectContent,SelectItem,SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
 
@@ -41,6 +38,42 @@ const blogs = [
     category:'devops',
     tags: ['DevOps', 'CI/CD'],
   },
+  {
+    title: "Understanding RESTful APIs",
+    description: "Learn about RESTful API design principles and best practices.",
+    author: "Pranesh Sharma",
+    date: "2024-01-13",
+    tags: ["API", "REST"],
+  },
+  {
+    title: "Containerization with Docker",
+    description: "Explore how Docker can simplify your application deployment process.",
+    author: "Pranesh Sharma",
+    date: "2024-01-14",
+    tags: ["Docker", "Containerization"],
+  },
+  {
+    title: "JavaScript ES6+ Features",
+    description: "Discover the powerful features introduced in modern JavaScript.",
+    author: "Pranesh Sharma",
+    date: "2024-01-15",
+    tags: ["JavaScript", "ES6"],
+  },
+  {
+    title: "Git Branching",
+    description: "Learn different Git branching models to improve your team's workflow.",
+    author: "Pranesh Sharma",
+    date: "2024-01-18",
+    tags: ["Git", "Workflow"],
+  },
+  {
+    title: "Introduction to AWS Lambda",
+    description: "Get started with serverless computing using AWS Lambda functions.",
+    author: "Pranesh Sharma",
+    date: "2024-01-10",
+    tags: ["AWS", "Serverless"],
+  },
+
 
 ]
 
