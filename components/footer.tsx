@@ -21,9 +21,9 @@ export function Footer() {
               tools
             </Link>
             
-            <Link href="/about" className="text-gray-500 hover:text-black">
+            {/* <Link href="/about" className="text-gray-500 hover:text-black">
               about
-            </Link>
+            </Link> */}
             <Link href="/contact" className="text-gray-500 hover:text-black">
               contact
             </Link>
