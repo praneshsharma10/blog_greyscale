@@ -12,9 +12,30 @@ const resources = [
             description: 'Complete guide to Amazon Web Services',
             url: 'https://docs.aws.amazon.com',
           },
+          {
+            title: 'Git Documentation',
+            description: 'Official Git version control documentation',
+            url: 'https://git-scm.com/doc',
+          },
+
         ],
-      }
-    ]
+    },
+    {
+      category: 'Cheat Sheets',
+      items: [
+        {
+          title: 'Git Commands Cheat Sheet',
+          description: 'Quick reference for common Git commands',
+          url: '#',
+        },
+        {
+          title: 'AWS Services Overview',
+          description: 'Overview of key AWS services and use cases',
+          url: '#',
+        },
+      ],
+    },
+  ]
 
 
     export default function ToolsPage() {
