@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
  
+
+@layer base {
+  :root {
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.6rem;
+  }
+}
+ 
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md;
+  }
+}
