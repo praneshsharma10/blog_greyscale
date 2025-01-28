@@ -74,9 +74,11 @@ export default function Home() {
                     </Badge>
                   ))}
                 </div>
-                <Button variant="outline" className="w-full">
-                  read more
-                </Button>
+                <Link href="/blogs">
+                  <Button variant="outline" className="w-full">
+                    read more
+                  </Button>
+                </Link>
               </div>
             </Card>
           ))}
@@ -90,12 +92,16 @@ export default function Home() {
         </h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((category, index) => (
+            <Link href="/blogs" passHref key={index}>
+              
             <Card key={index} className="p-6">
+
               <h3 className="text-lg font-semibold text-gray-900">
                 {category.name}
               </h3>
               <p className="text-sm text-gray-500">{category.count} articles</p>
             </Card>
+            </Link>
           ))}
         </div>
         
