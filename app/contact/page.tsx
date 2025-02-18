@@ -1,4 +1,3 @@
-// shadcn ui
 import { Card } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
@@ -11,6 +10,7 @@ export default function ContactPage() {
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-8">
           contact
         </h1>
+        
         <Card className="p-6">
           <form className="space-y-6">
             <div>
@@ -19,7 +19,7 @@ export default function ContactPage() {
               </label>
               <Input id="name" required />
             </div>
-
+            
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                 email
@@ -34,14 +34,13 @@ export default function ContactPage() {
               <Textarea id="message" required className="min-h-[150px]" />
             </div>
             
-            <Button type="submit" className="w-full rounded bg-black text-white hover:bg-black hover:text-white hover:scale-x-95 hover:scale-y-95">
+            <Button type="submit" className="w-full">
               send message
             </Button>
           </form>
         </Card>
       </div>
     </div>
-        
   )
 }
 

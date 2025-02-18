@@ -13,6 +13,8 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 
+
+
 const blogs = [
   {
     title: 'Getting Started with AWS',
@@ -88,6 +90,11 @@ const categories = [
   { value: "programming", label: "Programming Tutorials" },
 
 ]
+
+// const categoryOptions = [
+//   { value: "all", label: "All Categories" },
+//   ...categories.map((category) => ({ value: category.slug, label: category.name })),
+// ]
 
 export default function BlogsPage() {
 
@@ -170,6 +177,8 @@ export default function BlogsPage() {
                   })}
                 </time>
               </div>
+
+              
               <h2 className="text-xl font-semibold text-gray-900 mb-2">
                 {blog.title}
               </h2>
@@ -188,4 +197,3 @@ export default function BlogsPage() {
     </div>
   )
 }
-

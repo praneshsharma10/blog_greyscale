@@ -30,6 +30,15 @@ const categories = [
   { name: 'Programming Tutorials', count: 20 },
 ]
 
+// const categories = [
+//   { name: "AWS for Beginners", count: 12, slug: "aws-for-beginners" },
+//   { name: "Git & Version Control", count: 8, slug: "git-and-version-control" },
+//   { name: "Software Development Basics", count: 15, slug: "software-development-basics" },
+//   { name: "DevOps & CI/CD", count: 10, slug: "devops-and-cicd" },
+//   { name: "Programming Tutorials", count: 20, slug: "programming-tutorials" },
+// ]
+
+
 export default function Home() {
   return (
     <div className="space-y-24 pb-24">
@@ -109,4 +118,3 @@ export default function Home() {
     </div>
   )
 }
-
