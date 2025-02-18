@@ -141,3 +141,144 @@
 //   // ... Add more blog posts with their respective categories
 // ]
 
+
+
+
+// export const categories = [
+//     { name: "AWS for Beginners", count: 12, slug: "aws-for-beginners" },
+//     { name: "Git & Version Control", count: 8, slug: "git-and-version-control" },
+//     { name: "Software Development Basics", count: 15, slug: "software-development-basics" },
+//     { name: "DevOps & CI/CD", count: 10, slug: "devops-and-cicd" },
+//     { name: "Programming Tutorials", count: 20, slug: "programming-tutorials" },
+//   ]
+  
+  export const blogs = [
+    {
+      title: "Getting Started with AWS",
+      description: "Learn the basics of AWS and how to set up your first cloud infrastructure.",
+      author: "Pranesh Sharma",
+      date: "2024-01-09",
+      tags: ["AWS", "Cloud"],
+      category: "AWS for Beginners",
+      slug: "getting-started-with-aws",
+      content: [
+        {
+          type: "paragraph",
+          content:
+            "Amazon Web Services (AWS) is a comprehensive and widely used cloud platform that offers a vast array of services. In this guide, we'll walk you through the basics of AWS and help you set up your first cloud infrastructure.",
+        },
+        {
+          type: "heading",
+          content: "What is AWS?",
+        },
+        {
+          type: "paragraph",
+          content:
+            "AWS provides on-demand cloud computing platforms and APIs to individuals, companies, and governments on a pay-as-you-go basis. These cloud computing web services provide distributed computing processing capacity and software tools via AWS server farms.",
+        },
+        {
+          type: "heading",
+          content: "Setting Up Your First EC2 Instance",
+        },
+        {
+          type: "paragraph",
+          content:
+            "Let's start by setting up an EC2 (Elastic Compute Cloud) instance, which is a virtual server in the cloud. Here's a simple script to launch an EC2 instance using the AWS CLI:",
+        },
+        {
+          type: "code",
+          language: "bash",
+          content: `# Ensure you have configured your AWS CLI
+  aws configure
+  
+  # Launch an EC2 instance
+  aws ec2 run-instances \
+      --image-id ami-xxxxxxxx \
+      --count 1 \
+      --instance-type t2.micro \
+      --key-name MyKeyPair \
+      --security-group-ids sg-xxxxxxxx \
+      --subnet-id subnet-xxxxxxxx`,
+        },
+        {
+          type: "paragraph",
+          content:
+            "Remember to replace the placeholder values (xxx) with your actual AWS resource IDs. This command will launch a single t2.micro instance using the specified AMI, key pair, security group, and subnet.",
+        },
+      ],
+    },
+    {
+      title: "Git Fundamentals",
+      description: "Master the essential Git commands and workflows for version control.",
+      author: "Pranesh Sharma",
+      date: "2024-01-10",
+      tags: ["Git", "Version Control"],
+      category: "Git & Version Control",
+      slug: "git-fundamentals",
+      content: [
+        {
+          type: "paragraph",
+          content:
+            "Git is a distributed version control system that helps you track changes in your code and collaborate with other developers. In this guide, we'll cover the fundamental Git commands and workflows that every developer should know.",
+        },
+        {
+          type: "heading",
+          content: "Basic Git Commands",
+        },
+        {
+          type: "paragraph",
+          content: "Here are some essential Git commands to get you started:",
+        },
+        {
+          type: "code",
+          language: "bash",
+          content: `# Initialize a new Git repository
+  git init
+  
+  # Add files to the staging area
+  git add <file>
+  
+  # Commit changes
+  git commit -m "Your commit message"
+  
+  # Check the status of your repository
+  git status
+  
+  # View commit history
+  git log`,
+        },
+        {
+          type: "heading",
+          content: "Branching and Merging",
+        },
+        {
+          type: "paragraph",
+          content:
+            "Branching is a powerful feature in Git that allows you to work on different versions of your project simultaneously. Here are some commands for working with branches:",
+        },
+        {
+          type: "code",
+          language: "bash",
+          content: `# Create a new branch
+  git branch <branch-name>
+  
+  # Switch to a branch
+  git checkout <branch-name>
+  
+  # Create and switch to a new branch in one command
+  git checkout -b <branch-name>
+  
+  # Merge a branch into the current branch
+  git merge <branch-name>`,
+        },
+        {
+          type: "paragraph",
+          content:
+            "These commands will help you get started with Git. Remember to practice and explore more advanced features as you become comfortable with the basics.",
+        },
+      ],
+    },
+    // Add more blog posts with their respective content...
+  ]
+  
+  
