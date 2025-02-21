@@ -1,14 +1,4 @@
 
-// export const categories = [
-//     { value: "all", label: "All Categories" },
-//     { value: "aws", label: "AWS for Beginners",count: 12, slug: "aws-for-beginners" },
-//     { value: "git", label: "Git & Version Control", count: 8, slug: "git-and-version-control" },
-//     { value: "software-development", label: "Software Development" },
-//     { value: "devops", label: "DevOps & CI/CD", count: 10, slug: "devops-and-cicd" },
-//     { value: "programming", label: "Programming Tutorials", count: 20, slug: "programming-tutorials" },
-  
-//   ]
-
 
 // // export const categories = [
 // //     { name: "AWS for Beginners", count: 12, slug: "aws-for-beginners" },
@@ -144,13 +134,13 @@
 
 
 
-// export const categories = [
-//     { name: "AWS for Beginners", count: 12, slug: "aws-for-beginners" },
-//     { name: "Git & Version Control", count: 8, slug: "git-and-version-control" },
-//     { name: "Software Development Basics", count: 15, slug: "software-development-basics" },
-//     { name: "DevOps & CI/CD", count: 10, slug: "devops-and-cicd" },
-//     { name: "Programming Tutorials", count: 20, slug: "programming-tutorials" },
-//   ]
+export const categories = [
+    { name: "AWS for Beginners", count: 12, slug: "aws-for-beginners" },
+    { name: "Git & Version Control", count: 8, slug: "git-and-version-control" },
+    { name: "Software Development Basics", count: 15, slug: "software-development-basics" },
+    { name: "DevOps & CI/CD", count: 10, slug: "devops-and-cicd" },
+    { name: "Programming Tutorials", count: 20, slug: "programming-tutorials" },
+  ]
   
   export const blogs = [
     {
@@ -192,12 +182,12 @@
   aws configure
   
   # Launch an EC2 instance
-  aws ec2 run-instances \
-      --image-id ami-xxxxxxxx \
-      --count 1 \
-      --instance-type t2.micro \
-      --key-name MyKeyPair \
-      --security-group-ids sg-xxxxxxxx \
+  aws ec2 run-instances
+      --image-id ami-xxxxxxxx
+      --count 1
+      --instance-type t2.micro
+      --key-name MyKeyPair
+      --security-group-ids sg-xxxxxxxx
       --subnet-id subnet-xxxxxxxx`,
         },
         {
@@ -279,6 +269,121 @@
       ],
     },
     // Add more blog posts with their respective content...
-  ]
-  
+
+
+
+    {
+      title: "CI/CD Pipeline Setup",
+      description: "Build and deploy your applications automatically with CI/CD pipelines.",
+      author: "Pranesh Sharma",
+      date: "2024-01-12",
+      category: "DevOps & CI/CD",
+      tags: ["DevOps", "CI/CD"],
+      slug: "cicd-pipeline-setup",
+      content: [
+      {
+      type: "paragraph",
+      content:
+      "Learn how to set up a CI/CD pipeline to automate your build, test, and deployment processes. This post outlines the basics and tools you might use for integrating automated workflows.",
+      },
+      ],
+      },
+      {
+      title: "Understanding RESTful APIs",
+      description: "Learn about RESTful API design principles and best practices.",
+      author: "Pranesh Sharma",
+      date: "2024-01-13",
+      category: "Programming Tutorials",
+      tags: ["API", "REST"],
+      slug: "understanding-restful-apis",
+      content: [
+      {
+      type: "paragraph",
+      content:
+      "Discover the key principles behind RESTful APIs and how to design scalable and maintainable web services. We discuss HTTP methods, status codes, and resource modeling.",
+      },
+      ],
+      },
+      {
+      title: "Containerization with Docker",
+      description: "Explore how Docker can simplify your application deployment process.",
+      author: "Pranesh Sharma",
+      date: "2024-01-14",
+      category: "DevOps & CI/CD",
+      tags: ["Docker", "Containerization"],
+      slug: "containerization-with-docker",
+      content: [
+      {
+      type: "paragraph",
+      content:
+      "Docker allows you to package your applications in containers for consistent execution across different environments. This post introduces containerization and provides a basic Docker workflow.",
+      },
+      ],
+      },
+      {
+      title: "JavaScript ES6+ Features",
+      description: "Discover the powerful features introduced in modern JavaScript.",
+      author: "Pranesh Sharma",
+      date: "2024-01-15",
+      category: "Programming Tutorials",
+      tags: ["JavaScript", "ES6"],
+      slug: "javascript-es6-features",
+      content: [
+      {
+      type: "paragraph",
+      content:
+      "Modern JavaScript (ES6 and beyond) offers many exciting features like arrow functions, classes, template literals, and destructuring. Learn how these features can simplify your code.",
+      },
+      ],
+      },
+      {
+      title: "Git Branching",
+      description: "Learn different Git branching models to improve your team's workflow.",
+      author: "Pranesh Sharma",
+      date: "2024-01-18",
+      category: "Git & Version Control",
+      tags: ["Git", "Workflow"],
+      slug: "git-branching",
+      content: [
+      {
+      type: "paragraph",
+      content:
+      "Effective branching strategies are essential for managing features and bug fixes. Explore different models like Git Flow, GitHub Flow, and trunk-based development.",
+      },
+      ],
+      },
+      {
+      title: "Introduction to AWS Lambda",
+      description: "Get started with serverless computing using AWS Lambda functions.",
+      author: "Pranesh Sharma",
+      date: "2024-01-10",
+      category: "AWS for Beginners",
+      tags: ["AWS", "Serverless"],
+      slug: "introduction-to-aws-lambda",
+      content: [
+      {
+      type: "paragraph",
+      content:
+      "AWS Lambda lets you run your code without provisioning or managing servers. This post explains the basics of serverless computing and how to deploy your first Lambda function.",
+      },
+      ],
+      },
+      {
+      title: "Node.js Crash Course",
+      description:
+      "Quickly get up and running with Node.js and learn how to build scalable network applications.",
+      author: "Pranesh Sharma",
+      date: "2024-01-20",
+      category: "Programming Tutorials",
+      tags: ["Node.js", "JavaScript", "Backend"],
+      slug: "nodejs-crash-course",
+      content: [
+      {
+      type: "paragraph",
+      content:
+      "This crash course covers the fundamentals of Node.js, including event-driven architecture and asynchronous programming. You'll learn how to set up a basic server and work with packages using npm.",
+      },
+    ],
+  },
+];
   
