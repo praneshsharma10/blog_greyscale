@@ -66,18 +66,40 @@ import { blogs } from "@/lib/data"
 import { Badge } from "@/components/ui/badge"
 import { CodeBlock } from "@/components/code-block"
 
-export function generateStaticParams() {
+// export function generateStaticParams() {
+//   return blogs.map((blog) => ({
+//     slug: blog.slug,
+//   }))
+// } 
+//dockerfile issue { slug: string }
+
+export function generateStaticParams(): { slug: string }[] {
   return blogs.map((blog) => ({
     slug: blog.slug,
   }))
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+
+// export default function BlogPost({ params }: { params: { slug: string } }) {
+
+interface BlogPostProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default function BlogPost({ params }: BlogPostProps) {
+  //for ts to correctly recognize params
+
+
   const blog = blogs.find((b) => b.slug === params.slug)
 
   if (!blog) {
     notFound()
   }
+
+
+
 
   return (
     <article className="mx-auto max-w-3xl px-6 py-12 lg:px-8">
