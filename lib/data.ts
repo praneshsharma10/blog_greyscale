@@ -387,3 +387,37 @@ export const categories = [
   },
 ];
   
+
+
+export const featuredVideos = [
+  {
+    title: "Introduction to AWS",
+    description: "Learn the basics of Amazon Web Services",
+    youtubeId: "3hLmDS179YE",
+  },
+  {
+    title: "Git & GitHub Crash Course",
+    description: "Master the essentials of version control",
+    youtubeId: "RGOj5yH7evk",
+  },
+  {
+    title: "DevOps CI/CD Explained",
+    description: "Understanding Continuous Integration and Deployment",
+    youtubeId: "scEDHsr3APg",
+  },
+  {
+    title: "Docker for Beginners",
+    description: "Getting started with containerization",
+    youtubeId: "fqMOX6JJhGo",
+  },
+  {
+    title: "RESTful API Design",
+    description: "Best practices for designing web APIs",
+    youtubeId: "7YcW25PHnAA",
+  },
+  {
+    title: "Agile Scrum in 10 minutes",
+    description: "Quick overview of Agile project management",
+    youtubeId: "XU0llRltyFM",
+  },
+]

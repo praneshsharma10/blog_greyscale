@@ -11,7 +11,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 
 import Link from "next/link"
 
-import { blogs, categories } from "@/lib/data";
+import { blogs, categories, featuredVideos } from "@/lib/data";
+
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+import { Button } from "@/components/ui/button"
+import { ExternalLink, Play } from "lucide-react"
 
 // const blogs = [
 //   {
@@ -94,6 +98,53 @@ import { blogs, categories } from "@/lib/data";
 //   { value: "devops", label: "DevOps & CI/CD" },
 //   { value: "programming", label: "Programming Tutorials" },
 // ]
+
+
+function FeaturedVideos() {
+  return (
+    <section className="my-12">
+      <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-6">Featured Videos</h2>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {featuredVideos.map((video, index) => (
+          <Card key={index} className="flex flex-col">
+            <div className="relative pt-[56.25%]">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="ghost" className="absolute inset-0 flex items-center justify-center w-full h-full">
+                    <Play className="w-12 h-12" />
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-[800px]">
+                  <iframe
+                    width="100%"
+                    height="450"
+                    src={`https://www.youtube.com/embed/${video.youtubeId}`}
+                    title={video.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </DialogContent>
+              </Dialog>
+            </div>
+            <div className="p-4 flex-grow">
+              <h3 className="text-lg font-semibold mb-2">{video.title}</h3>
+              <p className="text-gray-600 mb-4">{video.description}</p>
+              <a
+                href={`https://www.youtube.com/watch?v=${video.youtubeId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-blue-600 hover:underline"
+              >
+                Watch on YouTube
+                <ExternalLink className="ml-1 w-4 h-4" />
+              </a>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </section>
+  )
+}
 
 
 
@@ -193,6 +244,7 @@ export default function BlogsPage() {
           </Link>
         ))}
       </div>
+      <FeaturedVideos />
     </div>
   )
 }
