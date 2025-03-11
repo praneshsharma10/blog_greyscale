@@ -19,8 +19,8 @@ export function Header() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="text-gray-900 text-sm font-medium">
-              pranesh sharma | tech explorer
+            <Link href="/" className="text-gray-900 text-lg font-medium">
+              blogr
             </Link>
           </div>
           

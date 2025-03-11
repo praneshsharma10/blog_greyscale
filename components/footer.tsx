@@ -51,7 +51,7 @@ export function Footer() {
 
 
         <p className="text-center text-sm text-gray-500 ">
-          © {new Date().getFullYear()} pranesh sharma | tech explorer
+          © {new Date().getFullYear()} pranesh sharma
         </p>
         </div>
       </footer>
